@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ladybug Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="headerMask">
+      <h1>The Ladybug</h1>
+    </div>
+  </header>
+  
+  <div class="ladybug">
+    <img src="images/ladybug.png" alt="a ladybug">
+  </div>
+  
+  <main>
+    <nav>
+      <a href="#top"><img class="logo" alt="personal logo" src="images/vf-logo.svg"></a>
+
+      <ul class="links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="navMenu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+   
+    <section id="intro">
+      <h2>Hello! <div>My name's Veda.</div></h2>
+      <p>I'm a newly minted front-end web developer and UX/UI designer.</p>
+      <img src="images/ladybugAbove.png" alt="another ladybug" class="scatter">
+    </section>
+    
+    <section id="work">
+      <h2>My Work</h2>
+      <div class="cardGrid">
+      <article>
+          <div class="description">
+            <h3>Rock Paper Scissors</h3>
+            <p>Uses a lot of Javascript rules.</p>
+            <a href="#">View Here</a>
+          </div>
+          <a href="#"><img src="images/rps-thumbnail.jpg" alt="rock paper scissors preview"></a>
+      </article>
+      <article>
+          <div class="description">
+            <h3>Bootstrap Webpage</h3>
+            <p>A design using framework.</p>
+            <a href="#">View Here</a>
+          </div>
+            <a href="#"><img src="images/bootstrap-thumbnail.jpg" alt="bootstrap webpage preview"></a>
+      </article>
+      </div>
+    </section>
+    
+    <section id="about">
+      <h2>About</h2>
+      <img src="images/ladybugAbove.png" alt="another ladybug" class="scatter">
+      <img class="portrait" src="images/me.jpg" alt="me, myself, the author of this webpage">
+      <div class="bio">
+        <p>Last year while trying to learn new things, I started doing online classes for web development. I found coding and designing websites to be so satisfying that I decided to change my career path to it.</p>
+        <p>I am wrapping up classes for the Certificate of Completion: Front End Web Developer II from San Diego College of Continuing Education. During this time I have created, designed, and revised webpages, and helped my classmates do the same.</p>
+      </div>
+      <p class="resume">Wanting something more traditional? <a href="https://docs.google.com/document/d/18i1ynCKk_yfwcv1Co0Z6BDz6DCUt0b7QjFTUuOZJ4is/edit?usp=sharing" target="_blank">Here's my resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <a href="mailto:vedafarmer@hotmail.com" class="contactInfo"><i class="fa-regular fa-envelope"></i> vedafarmer@hotmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <div class="contactInfo phone"><i class="fa-solid fa-phone"></i> <span class="phoneNum">858-616-7305</span> <i class="fa-regular fa-copy"></i></div>
+      <p>Available for hire.</p>
+      <img src="images/ladybugAbove.png" alt="another ladybug" class="scatter">
+    </section>
+  </main>
+  
+  <footer>
+    <button id="modalButton">Dislike my portfolio?</button>
+    <section class="modalOverlay">
+      <div class="modal">
+        <form action="#">
+          <fieldset>
+            <legend>Send your critiques</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="critique">What's the problem?</label>
+            <textarea id="critique" name="critique"></textarea>
+            
+            <div class="buttonHvr"></div>
+            <input type="submit" value="Submit" id="submit">
+          </fieldset>
+        </form>
+        <button class="close">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+    </section>
+    
+    <p>Veda Farmer, 2023</p>
+  </footer>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>
