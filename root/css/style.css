@@ -185,6 +185,9 @@ introduction
   opacity: 0;
   transition: opacity 1s;
 }
+#intro span {
+  display: block;
+}
 
 /*****
 
@@ -356,11 +359,10 @@ modal window
     top: 25%;
     opacity: 1;
   }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 button.close {
@@ -500,7 +502,7 @@ media queries
   #about .resume a{
     display: inline-block;
     margin: 2rem;
-    margin-right: 0;`
+    margin-right: 0;
   }
   
 /*** footer ***/
